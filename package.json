@@ -37,7 +37,6 @@
   "devDependencies": {
     "coveralls": "latest",
     "git-dirty": "latest",
-    "nyc": "latest",
     "standard": "latest",
     "standard-markdown": "latest"
   },
@@ -52,7 +51,7 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
     "pretest": "npm run lint",
-    "test": "nyc mocha"
+    "test": "echo 'not implemented test yet'"
   },
   "preferGlobal": true,
   "license": "MIT"
