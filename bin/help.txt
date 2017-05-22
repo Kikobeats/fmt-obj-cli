@@ -1,6 +1,13 @@
 Usage
   $ fmt-obj <filepath>
 
+Flags
+  --offset[=2]
+  The amount of left whitespace between the property key and all of it's sub-properties.
+
+  --depth[=Infinity]
+  Colapses all properties deeper than specified by depth.
+
 Examples
   $ fmt-obj package.json
   $ curl https://api.github.com/repos/expressjs/express | fmt-obj

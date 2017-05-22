@@ -2,10 +2,9 @@
 'use strict'
 
 const loadJsonFile = require('load-json-file')
+const {createFormatter} = require('fmt-obj')
 const getStdin = require('get-stdin')
-const format = require('fmt-obj')
 const chalk = require('chalk')
-
 const path = require('path')
 
 const pkg = require('../package.json')
@@ -23,14 +22,20 @@ getStdin()
   })
   .then(json => {
     if (!json) return cli.showHelp()
+    const {offset = 2, depth = Infinity} = cli.flags
 
-    const output = format(json, Infinity, {
-      punctuation: chalk.gray,
-      annotation: chalk.gray,
-      property: chalk.green,
-      literal: chalk.magenta,
-      number: chalk.cyan,
-      string: chalk.bold
-    }, 2)
+    const format = createFormatter({
+      offset,
+      formatter: {
+        punctuation: chalk.gray,
+        annotation: chalk.gray,
+        property: chalk.green,
+        literal: chalk.magenta,
+        number: chalk.cyan,
+        string: chalk.bold
+      }
+    })
+
+    const output = format(json, depth)
     process.stdout.write(output.toString())
   })
