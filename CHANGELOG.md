@@ -1,3 +1,10 @@
+<a name="1.0.1"></a>
+## 1.0.1 (2017-05-22)
+
+* Update deps ([77fb8f2](https://github.com/kikobeats/fmt-obj-cli/commit/77fb8f2))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2017-04-16)
 

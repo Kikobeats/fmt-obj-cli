@@ -2,7 +2,7 @@
   "name": "fmt-obj-cli",
   "description": "Pretty any JavaScript Object in your console",
   "homepage": "https://github.com/Kikobeats/fmt-obj-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "fmt-obj": "bin/index.js"
   },
