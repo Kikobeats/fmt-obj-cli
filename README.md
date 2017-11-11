@@ -1,7 +1,5 @@
 # fmt-obj-cli
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/fmt-obj-cli.svg)](https://greenkeeper.io/)
-
 ![Last version](https://img.shields.io/github/tag/Kikobeats/fmt-obj-cli.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/fmt-obj-cli/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/fmt-obj-cli)
 [![Dependency status](https://img.shields.io/david/Kikobeats/fmt-obj-cli.svg?style=flat-square)](https://david-dm.org/Kikobeats/fmt-obj-cli)
