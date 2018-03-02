@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "fmt-obj": "~2.0.0",
-    "get-stdin": "~5.0.1",
+    "get-stdin": "~6.0.0",
     "load-json-file": "~4.0.0",
     "meow": "~4.0.0",
     "update-notifier": "~2.3.0"
