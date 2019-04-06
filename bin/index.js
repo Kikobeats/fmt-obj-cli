@@ -2,13 +2,13 @@
 'use strict'
 
 const loadJsonFile = require('load-json-file')
-const {createFormatter} = require('fmt-obj')
+const { createFormatter } = require('fmt-obj')
 const getStdin = require('get-stdin')
 const chalk = require('chalk')
 const path = require('path')
 
 const pkg = require('../package.json')
-require('update-notifier')({pkg}).notify()
+require('update-notifier')({ pkg }).notify()
 
 const cli = require('meow')({
   pkg: pkg,
@@ -22,7 +22,7 @@ getStdin()
   })
   .then(json => {
     if (!json) return cli.showHelp()
-    const {offset = 2, depth = Infinity} = cli.flags
+    const { offset = 2, depth = Infinity } = cli.flags
 
     const format = createFormatter({
       offset,
