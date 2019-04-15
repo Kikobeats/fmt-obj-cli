@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.4](https://github.com/kikobeats/fmt-obj-cli/compare/v1.0.3...v1.0.4) (2019-04-15)
+
+
+### Bug Fixes
+
+* **package:** update get-stdin to version 7.0.0 ([ca7cd3e](https://github.com/kikobeats/fmt-obj-cli/commit/ca7cd3e))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/kikobeats/fmt-obj-cli/compare/v1.0.2...v1.0.3) (2019-04-06)
 
