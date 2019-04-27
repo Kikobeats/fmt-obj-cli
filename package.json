@@ -2,7 +2,7 @@
   "name": "fmt-obj-cli",
   "description": "Pretty any JavaScript Object in your console",
   "homepage": "https://github.com/Kikobeats/fmt-obj-cli",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "bin": {
     "fmt-obj": "bin/index.js"
   },
@@ -29,26 +29,26 @@
   ],
   "dependencies": {
     "fmt-obj": "~2.0.0",
-    "get-stdin": "~6.0.0",
+    "get-stdin": "~7.0.0",
     "load-json-file": "~5.3.0",
     "meow": "~5.0.0",
     "update-notifier": "~2.5.0"
   },
   "devDependencies": {
-    "coveralls": "latest",
-    "git-dirty": "latest",
-    "standard": "latest",
-    "standard-markdown": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "ci-publish": "latest",
     "conventional-github-releaser": "latest",
+    "coveralls": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
+    "git-dirty": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "npm-check-updates": "latest",
-    "standard-version": "latest",
-    "ci-publish": "latest"
+    "standard": "latest",
+    "standard-markdown": "latest",
+    "standard-version": "latest"
   },
   "engines": {
     "node": ">= 6"
@@ -60,15 +60,15 @@
     "clean": "rm -rf node_modules",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
-    "pretest": "npm run lint",
-    "test": "echo 'not implemented test yet'",
     "postrelease": "npm run release:tags && npm run release:github && ci-publish",
     "prerelease": "npm run update:check && git-authors-cli",
+    "pretest": "npm run lint",
+    "release": "git add package.json && standard-version -a",
     "release:github": "conventional-github-releaser -p angular",
     "release:tags": "git push --follow-tags origin HEAD:master",
-    "release": "git add package.json && standard-version -a",
-    "update:check": "ncu -- --error-level 2",
-    "update": "ncu -a"
+    "test": "echo 'not implemented test yet'",
+    "update": "ncu -a",
+    "update:check": "ncu -- --error-level 2"
   },
   "preferGlobal": true,
   "license": "MIT",
@@ -83,17 +83,17 @@
       "pre-commit": "lint-staged"
     }
   },
-  "standard-version": {
-    "scripts": {
-      "prechangelog": "git-authors-cli"
-    }
-  },
   "lint-staged": {
     "linters": {
       "package.json": [
         "finepack",
         "git add"
       ]
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "prechangelog": "git-authors-cli"
     }
   }
 }
