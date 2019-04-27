@@ -30,7 +30,7 @@
   "dependencies": {
     "fmt-obj": "~2.0.0",
     "get-stdin": "~7.0.0",
-    "load-json-file": "~5.2.0",
+    "load-json-file": "~5.3.0",
     "meow": "~5.0.0",
     "update-notifier": "~2.5.0"
   },
