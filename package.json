@@ -61,9 +61,9 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
     "postrelease": "npm run release:tags && npm run release:github && ci-publish",
-    "prerelease": "npm run update:check && git-authors-cli",
+    "prerelease": "npm run update:check",
     "pretest": "npm run lint",
-    "release": "git add package.json && standard-version -a",
+    "release": "git-authors-cli && git add package.json && standard-version -a",
     "release:github": "conventional-github-releaser -p angular",
     "release:tags": "git push --follow-tags origin HEAD:master",
     "test": "echo 'not implemented test yet'",
@@ -89,11 +89,6 @@
         "finepack",
         "git add"
       ]
-    }
-  },
-  "standard-version": {
-    "scripts": {
-      "prechangelog": "git-authors-cli"
     }
   }
 }
