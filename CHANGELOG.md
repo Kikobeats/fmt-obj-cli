@@ -1,6 +1,21 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.0.6](https://github.com/kikobeats/fmt-obj-cli/compare/v1.0.5...v1.0.6) (2019-05-20)
+
+
+### Bug Fixes
+
+* **package:** update update-notifier to version 2.6.0 ([964832a](https://github.com/kikobeats/fmt-obj-cli/commit/964832a))
+
+
+### Build System
+
+* change git-authors-cli position ([355d21d](https://github.com/kikobeats/fmt-obj-cli/commit/355d21d))
+* update dependencies ([9b36218](https://github.com/kikobeats/fmt-obj-cli/commit/9b36218))
+
+
 
 ## [1.0.5](https://github.com/kikobeats/fmt-obj-cli/compare/v1.0.4...v1.0.5) (2019-04-27)
 
