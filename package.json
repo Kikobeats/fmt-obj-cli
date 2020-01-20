@@ -31,7 +31,7 @@
     "fmt-obj": "~2.0.0",
     "get-stdin": "~7.0.0",
     "load-json-file": "~6.2.0",
-    "meow": "~5.0.0",
+    "meow": "~6.0.0",
     "update-notifier": "~4.0.0"
   },
   "devDependencies": {
