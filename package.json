@@ -32,7 +32,7 @@
     "get-stdin": "~7.0.0",
     "load-json-file": "~6.1.0",
     "meow": "~5.0.0",
-    "update-notifier": "~3.0.0"
+    "update-notifier": "~4.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
